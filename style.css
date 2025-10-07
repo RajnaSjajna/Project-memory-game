@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #11afcb, #04a4e9);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Glavni kontejner */
+.game-container {
+    text-align: center;
+    max-width: 950px;
+    margin: auto;
+}
+
+/* Naslov i uputstvo */
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.instructions {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Tabla za igru (4x4 mreža) */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-gap: 20px;
+    justify-content: center;
+    margin: 0 auto 30px;
+
+}
+
+/* Kartice */
+.card {
+    width: 220px;
+    height: 150px;
+    border: 2px solid #ffffff55;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    perspective: 1000px;
+
+}
+
+/*  unutrasnji sloj kartice koji omogucava rotaciju oko svoje ose */
+
+    .card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+
+/* Kad je kartica otvorena ili pogodjena */
+.card.flip .card-inner {
+    transform: rotateY(180deg);
+    /* zadnja strana kartice (ono što se vidi na početku) */
+}
+
+.card-front,
+
+.card-back {
+
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-back {
+    background-image: url("../assets/slika.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.card-front {
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+
+}
+
+/* Efekat hover-a i flip */
+.card:hover {
+    transform: scale(1.05);
+    background-color: #ffffff33;
+}
+
+
+/* Info sekcija */
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#resetButton {
+    background-color: #fff;
+    color: #2575fc;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#resetButton:hover {
+    background-color: #2575fc;
+    color: #fff;
+}
+
+/* === SLIKE ZA TEST === */
+.card1 .card-front {
+    background-image: url("../assets/Montenegro.jpg");
+}
+
+.card2 .card-front {
+    background-image: url("../assets/Italy.jpg");
+}
+
+.card3 .card-front {
+    background-image: url("../assets/France.jpg");
+}
+
+.card4 .card-front {
+    background-image: url("../assets/Jerusalem.jpg");
+}
+
+.card5 .card-front {
+    background-image: url("../assets/SanFrancisco.jpg");
+}
+
+.card6 .card-front {
+    background-image: url("../assets/Brasil.jpg");
+}
+
+.card7 .card-front {
+    background-image: url("../assets/China.jpg");
+}
+
+.card8 .card-front {
+    background-image: url("../assets/Egipat.jpg");
+}
+
+
+
