@@ -3,7 +3,7 @@ let flippedCards = [];
 let lockBoard = false;
 let moves = 0;
 let timerInterval = null;
-let timeLeft = 60;
+let timeLeft = 50;
 
 const timerDisplay = document.getElementById('timer');
 const movesDisplay = document.getElementById('moves');
@@ -22,9 +22,20 @@ function flipCard() {
     if (!timerInterval) startTimer(); //pokreće se samo jednom
     if (lockBoard) return;
     if (this === flippedCards[0]) return;
+
     this.classList.add('flip');
     flippedCards.push(this);
+ // Ako je samo jedna kartica otvorena, pokreni automatsko vraćanje
+    if (flippedCards.length === 1) {
+        const firstCard = this;
+        setTimeout(() => {
+            if (flippedCards.length === 1) {
+                flippedCards [0].classList.remove('flip');
+                flippedCards = [];
+            }
 
+        }, 1000);
+    }
     if (flippedCards.length === 2) {
         checkForMatch();
     }
@@ -51,7 +62,7 @@ function disableCards() {
 
 //timer koji odbrojava
 function startTimer() {
-    let timeLeft = 60;
+   let timeLeft = 50;
     timerDisplay.textContent = timeLeft;
 
     timerInterval = setInterval(() => {
@@ -102,14 +113,18 @@ function resetBoard() {
 
 // Dugme za novu igru
 resetButton.addEventListener('click', () => {
+    stopTimer();
+    timeLeft = 50;
+    timerDisplay.textContent = timeLeft;
+
     cards.forEach(card => {
         card.classList.remove('flip');
         card.addEventListener('click', flipCard);
     });
+
+
     moves = 0;
     movesDisplay.textContent = moves;
-    timerDisplay.textContent = timer;
-    stopTimer();
     resetBoard();
     lockBoard = false;
     shuffleCards();
