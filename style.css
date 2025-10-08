@@ -63,13 +63,13 @@ h1 {
 
 /*  unutrasnji sloj kartice koji omogucava rotaciju oko svoje ose */
 
-    .card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-    }
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
 
 
 /* Kad je kartica otvorena ili pogodjena */
@@ -140,7 +140,7 @@ h1 {
     color: #fff;
 }
 
-/* === SLIKE ZA TEST === */
+/* === SLIKE  === */
 .card1 .card-front {
     background-image: url("../assets/Montenegro.jpg");
 }
@@ -197,4 +197,3 @@ h1 {
 .hidden {
     display: none;
 }
-

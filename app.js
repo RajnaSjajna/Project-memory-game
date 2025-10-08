@@ -33,7 +33,7 @@ function flipCard() {
                 flippedCards[0].classList.remove('flip');
                 flippedCards = [];
             }
-        }, 1000);
+        }, 2000);
     }
 
     // Ako su otvorene dvije, provjeri poklapanje
