@@ -9,7 +9,7 @@ The goal is to find all matching pairs before the timer runs out of the time.
 ## Game Preview
 
 
-![ScnSht](assets/ScrShtNo1.jpg)
+![Memory Game S&D](assets/ScrShtNo1.jpg)
 *Memory Game S&D showing picture before game starts*
 
 
@@ -32,8 +32,8 @@ The goal is to find all matching pairs before the timer runs out of the time.
 ## Features
 
  * Random card shuffling
- * Reset button
-
+ * New game/reset button
+* Attempt button included
 * Countdown timer
 
 * Move blocking during pair checking
@@ -43,7 +43,7 @@ The goal is to find all matching pairs before the timer runs out of the time.
 * “Time’s up!” popup centered on screen + automatic game restart
 
  
-![alt text](assets/SCrShtNo.3.jpg)
+![Memory Game S&D](assets/SCrShtNo.3.jpg)
  *Picture showing all pictures faced Up*
 
 
