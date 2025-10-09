@@ -12,6 +12,7 @@ The goal is to find all matching pairs before the timer runs out of the time.
 ![Memory Game S&D](assets/ScrShtNo1.jpg)
 *Screenshot of the Memory Game S&D showing picture before game starts*
 
+[Play Game Here](https://rajnasjajna.github.io/Project-memory-game/)
 
 ##  How to Play
 

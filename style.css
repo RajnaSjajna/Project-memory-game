@@ -90,7 +90,7 @@ h1 {
 }
 
 .card-back {
-    background-image: url("../assets/slika.jpg");
+    background-image: url("assets/slika.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -142,35 +142,35 @@ h1 {
 
 /* SLIKE*/
 .card1 .card-front {
-    background-image: url("../assets/Montenegro.jpg");
+    background-image: url("assets/Montenegro.jpg");
 }
 
 .card2 .card-front {
-    background-image: url("../assets/Italy.jpg");
+    background-image: url("assets/Italy.jpg");
 }
 
 .card3 .card-front {
-    background-image: url("../assets/France.jpg");
+    background-image: url("assets/France.jpg");
 }
 
 .card4 .card-front {
-    background-image: url("../assets/Jerusalem.jpg");
+    background-image: url("assets/Jerusalem.jpg");
 }
 
 .card5 .card-front {
-    background-image: url("../assets/SanFrancisco.jpg");
+    background-image: url("assets/SanFrancisco.jpg");
 }
 
 .card6 .card-front {
-    background-image: url("../assets/Brasil.jpg");
+    background-image: url("assets/Brasil.jpg");
 }
 
 .card7 .card-front {
-    background-image: url("../assets/China.jpg");
+    background-image: url("assets/China.jpg");
 }
 
 .card8 .card-front {
-    background-image: url("../assets/Egipat.jpg");
+    background-image: url("assets/Egipat.jpg");
 }
 
 
