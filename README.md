@@ -10,7 +10,7 @@ The goal is to find all matching pairs before the timer runs out of the time.
 
 
 ![Memory Game S&D](assets/ScrShtNo1.jpg)
-*Memory Game S&D showing picture before game starts*
+*Screenshot of the Memory Game S&D showing picture before game starts*
 
 
 ##  How to Play
@@ -22,11 +22,10 @@ The goal is to find all matching pairs before the timer runs out of the time.
 
 5. When the time runs out, a “Time’s up!” message appears in the center and the game automatically resets.
 
-
   
 ![Memory Game S&D](assets/ScreenshotNo2.jpg)
 
-*Memory game S&D showing how screen looks when time's up* 
+*Screenshot No.2 of the Memory Game S&D showing how screen looks when time's up* 
 
 
 ## Features
@@ -43,12 +42,19 @@ The goal is to find all matching pairs before the timer runs out of the time.
 * “Time’s up!” popup centered on screen + automatic game restart
 
  
-![Memory Game S&D](assets/SCrShtNo.3.jpg)
- *Picture showing all pictures faced Up*
+![Memory Game S&D](assets/SCrShtNo.3.jpg) 
+ *Screenshot No.3 of the Memory Game S&D   showing all pictures faced Up*
+
+
+### Next step
+
+* Add second player
+* Add more cards
+* Make it more professional
 
 
 ##  How to Run the Memory Game S&D
 
 1. Download or clone this repository:
    ```bash
-   git clone https://github.com/RajnaSjajna/Project-memory-game/
+   https://github.com/RajnaSjajna/Project-memory-game
